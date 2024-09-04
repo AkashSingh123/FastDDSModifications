@@ -7,7 +7,7 @@ if [ $EUID -ne 0 ]; then
     exit 2
 fi
 
-cd /$SUDO_USER/Fast-DDS
+cd /home/$SUDO_USER/Fast-DDS
 
 cd foonathan_memory_vendor/build
 cmake .. -DCMAKE_INSTALL_PREFIX=/usr/local/ -DBUILD_SHARED_LIBS=ON
