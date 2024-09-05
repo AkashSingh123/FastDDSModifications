@@ -7,7 +7,7 @@ if [ $EUID -ne 0 ]; then
     exit 2
 fi
 
-cd /$SUDO_USER/Fast-DDS
+cd ~/Fast-DDS
 
 if [ $1="m" ]; then
     cd Fast-DDS-with-security-interoperability-modifications/build
